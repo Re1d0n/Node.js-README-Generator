@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
-
+const generateMarkdown= require("./utils/generateMarkdown")
+const fs = require('fs')
 const inquirer = require ('inquirer');
 inquirer.prompt([
     {
@@ -25,12 +26,12 @@ inquirer.prompt([
 {
     type: "input", 
     message: "Enter your contribution guidelines",
-    name: "contribution"
+    name: "contributing"
 },
 {
     type: "input", 
     message: "Enter your test instructions",
-    name: "test"
+    name: "tests"
 },
 {
     type: "list", 
@@ -49,7 +50,18 @@ inquirer.prompt([
     name: "email"
 },
 ]) .then((response)=>{
-    
+  console.log(
+      response
+  )
+  fs.writeFile(
+    `${response.title}.md`,generateMarkdown(response),
+    function(e){
+        if(e){
+            throw e
+        }
+        console.log("readme complete")
+    }
+  )
 })
 
 // TODO: Create an array of questions for user input
