@@ -1,7 +1,7 @@
-# hehe
+# why toothpaste is good
 
-  ## descriptions
-frog
+  ## Descriptions
+toothpaste
 
 ## Table of Conetents
 installation
@@ -12,20 +12,20 @@ tests
 questions 
 
 ## Installation
-water
+use toothpaste
 
 ## Usage
-bug
+toothpaste 
 
 ## License 
-MIT
+ISC
 
 ## Contributing
-lizard
+always use toothpaste
 
 ## Tests
-newt
+brush your teeth
 
 ## Questions
-github
-email
+toothpastegithub
+toothpaste@gmail.com
